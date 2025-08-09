@@ -2607,9 +2607,9 @@
       },
       "propertyName": {
         "ja": "快適エアリーゾーン室温",
-        "en": "Kaiteki Airly Zone Room Tempertures"
+        "en": "Kaiteki Airy Zone Room Tempertures"
       },
-      "shortName": "kaitekiAirlyZoneTemps",
+      "shortName": "kaitekiAiryZoneTemps",
       "accessRule": {
         "get": "optional",
         "set": "optional",
@@ -2723,9 +2723,9 @@
       },
       "propertyName": {
         "ja": "快適エアリーゾーン設定",
-        "en": "Kaiteki Airly Zone Configuration"
+        "en": "Kaiteki Airy Zone Configuration"
       },
-      "shortName": "kaitekiAirlyZoneConfigs",
+      "shortName": "kaitekiAiryZoneConfigs",
       "accessRule": {
         "get": "optional",
         "set": "optional",
@@ -2755,6 +2755,10 @@
                 {
                   "edt": "0x31",
                   "name": "on"
+                },
+                {
+                  "edt": "0x32",
+                  "name": "keep"
                 }
               ]
             }
@@ -2874,6 +2878,10 @@
                 {
                   "edt": "0x31",
                   "name": "on"
+                },
+                {
+                  "edt": "0x32",
+                  "name": "keep"
                 }
               ]
             }
@@ -2993,6 +3001,10 @@
                 {
                   "edt": "0x31",
                   "name": "on"
+                },
+                {
+                  "edt": "0x32",
+                  "name": "keep"
                 }
               ]
             }
