@@ -2600,6 +2600,116 @@
       }
     },
     {
+      "epc": "0xF0",
+      "validRelease": {
+        "from": "C",
+        "to": "latest"
+      },
+      "propertyName": {
+        "ja": "快適エアリー状態",
+        "en": "Kaiteki Airy Status"
+      },
+      "shortName": "kaitekiAiryStatus",
+      "accessRule": {
+        "get": "optional",
+        "set": "optional",
+        "inf": "optional"
+      },
+      "descriptions": {
+        "ja": "快適エアリーの動作状態",
+        "en": "This property indicates the status of Kaiteki Airy."
+      },
+      "data": {
+        "type": "object",
+        "properties": [
+          {
+            "elementName": {
+              "ja": "Unknown 1",
+              "en": "Unknown 1"
+            },
+            "shortName": "unknown1",
+            "element": {
+              "type": "state",
+              "size": 1,
+              "enum": [
+                {
+                  "edt": "0x30",
+                  "name": "off"
+                },
+                {
+                  "edt": "0x31",
+                  "name": "on"
+                }
+              ]
+            }
+          },
+          {
+            "elementName": {
+              "ja": "おでかけモード",
+              "en": "Away Mode"
+            },
+            "shortName": "awayMode",
+            "element": {
+              "type": "state",
+              "size": 1,
+              "enum": [
+                {
+                  "edt": "0x30",
+                  "name": "off"
+                },
+                {
+                  "edt": "0x31",
+                  "name": "on"
+                }
+              ]
+            }
+          },
+          {
+            "elementName": {
+              "ja": "Unknown 2",
+              "en": "Unknown 2"
+            },
+            "shortName": "unknown2",
+            "element": {
+              "type": "state",
+              "size": 1,
+              "enum": [
+                {
+                  "edt": "0x30",
+                  "name": "off"
+                },
+                {
+                  "edt": "0x31",
+                  "name": "on"
+                }
+              ]
+            }
+          },
+          {
+            "elementName": {
+              "ja": "Unknown 3",
+              "en": "Unknown 3"
+            },
+            "shortName": "unknown3",
+            "element": {
+              "type": "state",
+              "size": 1,
+              "enum": [
+                {
+                  "edt": "0x30",
+                  "name": "off"
+                },
+                {
+                  "edt": "0x31",
+                  "name": "on"
+                }
+              ]
+            }
+          }
+        ] 
+      }
+    },
+    {
       "epc": "0xFA",
       "validRelease": {
         "from": "C",
@@ -2710,6 +2820,124 @@
               "format": "uint8",
               "minimum": 0,
               "maximum": 255
+            }
+          }
+        ] 
+      }
+    },
+    {
+      "epc": "0xF4",
+      "validRelease": {
+        "from": "C",
+        "to": "latest"
+      },
+      "propertyName": {
+        "ja": "快適エアリータイマー設定",
+        "en": "Kaiteki Airy Timer Settings"
+      },
+      "shortName": "kaitekiAiryTimerSettings",
+      "accessRule": {
+        "get": "optional",
+        "set": "optional",
+        "inf": "optional"
+      },
+      "descriptions": {
+        "ja": "快適エアリーの暖房・冷房（通常・ピークカット）それぞれのタイマー設定",
+        "en": "This property indicates the timer settings of Kaiteki Airy."
+      },
+      "data": {
+        "type": "object",
+        "properties": [
+          {
+            "elementName": {
+              "ja": "ピークカット設定",
+              "en": "Peak Cut Setting"
+            },
+            "shortName": "peakCutSetting",
+            "element": {
+              "type": "object",
+              "properties": [
+                {
+                  "elementName": {
+                    "ja": "暖房タイマー設定",
+                    "en": "Heating Timer Setting"
+                  },
+                  "shortName": "heatingTimerSetting",
+                  "element": {
+                    "type": "array",
+                    "maxItems": 3,
+                    "itemSize": 6,
+                    "items":{
+                      "type": "raw",
+                      "minSize": 6,
+                      "maxSize": 6
+                    }
+                  }   
+                },
+                {
+                  "elementName": {
+                    "ja": "冷房タイマー設定",
+                    "en": "Cooling Timer Setting"
+                  },
+                  "shortName": "coolingTimerSetting",
+                  "element": {
+                    "type": "array",
+                    "maxItems": 3,
+                    "itemSize": 6,
+                    "items":{
+                      "type": "raw",
+                      "minSize": 6,
+                      "maxSize": 6
+                    }
+                  }   
+                }
+              ]
+            }
+          },
+          {
+            "elementName": {
+              "ja": "通常設定",
+              "en": "Normal Setting"
+            },
+            "shortName": "normalSetting",
+            "element": {
+              "type": "object",
+              "properties": [
+                {
+                  "elementName": {
+                    "ja": "暖房タイマー設定",
+                    "en": "Heating Timer Setting"
+                  },
+                  "shortName": "heatingTimerSetting",
+                  "element": {
+                    "type": "array",
+                    "maxItems": 3,
+                    "itemSize": 6,
+                    "items":{
+                      "type": "raw",
+                      "minSize": 6,
+                      "maxSize": 6
+                    }
+                  }   
+                },
+                {
+                  "elementName": {
+                    "ja": "冷房タイマー設定",
+                    "en": "Cooling Timer Setting"
+                  },
+                  "shortName": "coolingTimerSetting",
+                  "element": {
+                    "type": "array",
+                    "maxItems": 3,
+                    "itemSize": 6,
+                    "items":{
+                      "type": "raw",
+                      "minSize": 6,
+                      "maxSize": 6
+                    }
+                  }   
+                }
+              ]
             }
           }
         ] 
@@ -2856,7 +3084,15 @@
                 },
                 {
                   "edt": "0x31",
-                  "name": "on"
+                  "name": "timer1"
+                },
+                {
+                  "edt": "0x32",
+                  "name": "timer2"
+                },
+                {
+                  "edt": "0x33",
+                  "name": "timer3"
                 }
               ]
             }
