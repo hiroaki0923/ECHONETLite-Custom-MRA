@@ -3215,7 +3215,15 @@
                 },
                 {
                   "edt": "0x31",
-                  "name": "on"
+                  "name": "timer1"
+                },
+                {
+                  "edt": "0x32",
+                  "name": "timer2"
+                },
+                {
+                  "edt": "0x33",
+                  "name": "timer3"
                 }
               ]
             }
@@ -3338,7 +3346,15 @@
                 },
                 {
                   "edt": "0x31",
-                  "name": "on"
+                  "name": "timer1"
+                },
+                {
+                  "edt": "0x32",
+                  "name": "timer2"
+                },
+                {
+                  "edt": "0x33",
+                  "name": "timer3"
                 }
               ]
             }
